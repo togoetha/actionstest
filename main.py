@@ -1,4 +1,3 @@
-# filepath: runner/main.py
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU
 from multiprocessing import shared_memory
