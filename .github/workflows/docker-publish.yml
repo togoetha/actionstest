@@ -22,7 +22,7 @@ jobs:
   test:
     uses: togoetha/actionstest/.github/workflows/python-app.yml@main
   publish:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: read
       packages: write
