@@ -48,7 +48,7 @@ import logging
 #  Semaphore & Shared‑Memory Setup
 # ——————————————————————————————————————————————————————————————
 def load_config(file="config.json"):
-    """Load configuration from a JSON file."""
+    """Load configuration from a JSON file2."""
     with open(file, "r") as f:
         content = f.read()
         # Replace JavaScript-style booleans and null with Python-compatible values
