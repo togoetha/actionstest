@@ -18,8 +18,9 @@ env:
 
 
 jobs:
-  build:
-
+  test:
+    uses: togoetha/actionstest/.github/workflows/python-app.yml@main
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -29,8 +30,8 @@ jobs:
       id-token: write
 
     steps:
-      - name: Build + test
-        uses: github.com/togoetha/actionstest/.github/workflows/python-app.yml@main
+      - name: Checkout
+        uses: actions/checkout@v4
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
