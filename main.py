@@ -61,7 +61,7 @@ def load_config(file="config.json"):
         config = eval(content)
     except SyntaxError as e:
         raise ValueError(f"Failed to parse the JSON file: {file}. Error: {e}")
-    logger.info(f"Loaded config: {config}")
+    
     return config
 
 
