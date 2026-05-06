@@ -1,7 +1,7 @@
 name: Build and deploy a container to Harbor
 
 env:
-  HARBOR_SERVER: 193.190.127.141:80  # set this to the name of your Azure Web App
+  HARBOR_SERVER: mlopslab.ilabt.imec.be:444  # set this to the name of your Azure Web App
   HARBOR_REPO: library
   IMAGE_NAME: ${{ github.repository }}
 
