@@ -17,6 +17,7 @@ jobs:
   test:
     uses: togoetha/actionstest/.github/workflows/python-app.yml@main
   build:
+    needs: test
     #runs-on: ubuntu-latest
     runs-on: self-hosted
     steps:
